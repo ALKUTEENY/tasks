@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>تنظيم المهام</title>
+</head>
+<body>
+    <header>
+        <h1>تنظيم الوقت والمهام</h1>
+    </header>
+    <section>
+        <input type="text"  id="search" placeholder="ايحث عن مهمة .......">
+    </section>
+    <section>
+        <h2>إضافة مهمة جديدة</h2>
+        <input type="text" name="" id="task-input" placeholder="أدخل المهمة الجديدة">
+        <button type="button" id="add-task-btn">إضافة</button><br><br>
+        <label for="category">تصنيف المهمة:</label>
+        
+        <select id="category">
+            <option value="work">العمل</option>
+            <option value="study">الدراسة</option>
+            <option value="personal">شخصي</option>
+            <option value="urgent">طارئ</option>
+        </select>
+
+    </section>
+    <script src="script.js"></script>
+    <section id="task-list">
+        <h2>المهام</h2>
+        <!-- <input type="checkbox" id="task-check"> -->
+    </section>
+</body>
+</html>

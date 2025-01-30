@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    direction: rtl;
+    background-color: #f1f1f0;
+    margin: 0;
+    padding: 0;
+
+}
+header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
+h1 {
+    margin: 0;
+    font-size: 40px;
+}
+section {
+    padding: 20px;
+    margin: 10px auto;
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+input[type="text"] {
+    padding: 12px;
+    width: 75%;
+    margin-right: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+input[type="text"]:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #45a049;
+}
+#task-list {
+    padding: 10px;
+    margin-top: 30px;
+    list-style-type: none;
+}
+.task {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s ease;
+
+}
+.task.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+.task-check {
+    margin-left: 10px;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.task button {
+    background-color: #f44336;
+    border-radius: 50%;
+    padding: 8px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.task button:hover {
+    background-color: #d32f2f;
+}
+.task {
+    opacity: 0;
+    animation: fadeln 0.75s forwards;
+}
+@keyframes fadeln {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#search {
+    padding: 12px;
+    width: 75%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3 ease;
+
+}
+#search:focus {
+    border-color: #4caf50;
+    outline: none;
+}
+
+.task.work {
+    background-color: #c8e6c9;
+}
+.task.personal {
+    background-color: #ffccbc;
+}
+.task.study {
+    background-color: #8be8ff;
+}
+.task.urgent {
+    background-color: #ff7043;
+}
+
