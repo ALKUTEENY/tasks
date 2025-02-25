@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/clock/clock.css">
+    <title>تنظيم المهام</title>
+</head>
+<body>
+    <header>
+        <h1>تنظيم الوقت والمهام</h1>
+    </header>
+    
+    <div id="flip-clock">
+        <div class="flip-unit">
+            <div class="top" id="seconds-top">00</div>
+            <div class="bottom" id="seconds-bottom">00</div>
+        </div>
+        <div class="flip-unit">
+            <div class="top" id="minutes-top">00</div>
+            <div class="bottom" id="minutes-bottom">00</div>
+        </div>
+        <div class="flip-unit">
+            <div class="top" id="hours-top">00</div>
+            <div class="bottom" id="hours-bottom">00</div>
+        </div>
+    </div>
+    
+    <section>
+        <input type="text"  id="search" placeholder="ايحث عن مهمة .......">
+    </section>
+    <section>
+        <h2>إضافة مهمة جديدة</h2>
+        <input type="text" name="" id="task-input" placeholder="أدخل المهمة الجديدة">
+        <button type="button" id="add-task-btn">إضافة</button><br><br>
+        <label for="category">تصنيف المهمة:</label>
+        
+        <select id="category">
+            <option value="work">العمل</option>
+            <option value="study">الدراسة</option>
+            <option value="personal">شخصي</option>
+            <option value="urgent">طارئ</option>
+        </select>
+
+    </section>
+    <script src="script.js"></script>
+    <script src="clock/clock.js"></script>
+    <section id="task-list">
+        <h2>المهام</h2>
+        <!-- <input type="checkbox" id="task-check"> -->
+    </section>
+    <button class="floating-btn" id="mainBtn">+</button>
+
+    <!-- قائمة الأزرار الفرعية -->
+    <div class="floating-menu" id="menu">
+        <button onclick="location.href='calculator/calc.html'">
+              
+            <img src="img/calc.jpg">
+        
+        </button>
+        <button onclick="location.href='AL-Dhell/index.html'//alert('🌹سيتم فتح ميزة الظل قريباً انتظري 🌹')">
+        
+            <img src="img/chat.jpg">
+        
+        </button>
+        <button onclick="alert('تحسَّباً لأي أضافة أخرى 😁😅')">
+        
+            <img src="img/un.jpg">
+        
+        </button>
+    </div>
+
+    <script src="calc.js"></script>
+</body>
+</html>
